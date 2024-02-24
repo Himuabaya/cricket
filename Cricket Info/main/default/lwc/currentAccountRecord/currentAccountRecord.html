@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Current Record Details">
+
+       <p><lightning-formatted-text value={type}></lightning-formatted-text></p>
+
+       <template if:true={typeFlag}>
+       In Progress
+    </template>
+
+       
+       <template if:false={typeFlag}>
+       Closed
+    </template>
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,9 @@
+.myStyle{
+    --sds-c-button-brand-color--background: green;
+    --sds-c-button-brand-color--border: red;
+}
+
+h1{
+    font-size: 150%;
+    color: rgb(236, 183, 6);
+}

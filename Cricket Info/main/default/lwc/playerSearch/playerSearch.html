@@ -1,0 +1,20 @@
+<template>
+<lightning-card title="Find Players">
+    <lightning-button label="New Cricketer" 
+                        variant="brand" 
+                        onclick={searchCricketerHandler}
+                        slot="actions">
+    </lightning-button>
+    <div class="slds-align_absolute-center">
+    <lightning-combobox value={selectNationality}
+                        options={optionsArray}
+                        onchange={handleOptionChange} >
+  </lightning-combobox>
+</div>
+    
+ </lightning-card>
+
+ <div class="slds-m-top_small">
+ <c-player-search-results></c-player-search-results>
+</div>
+</template>
